@@ -8,7 +8,7 @@ import './SignupForm.css';
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
     .min(2, 'Trop court !')
-    .max(50, 'Trop long !')
+    .max(20, 'Trop long !')
     .required('Requis'),
   lastName: Yup.string()
     .min(2, 'Trop court !')
